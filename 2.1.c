@@ -27,11 +27,11 @@ int main(void)
     {
         b[i]=(double)i/20.0;
         printf("b[%d]=%f \n",i,b[i]);
+    }
         free_dvector(b,1);
         printf("bを解放しました\n");
 
         return 0;
-    }
 }
 double *dvector(int i, int j)   /*a[i]～a[j]の領域を確保*/
 {
